@@ -1,0 +1,37 @@
+
+  h3{
+    text-align: center;
+}
+/* select {
+width: 140px;
+} */ 
+
+table{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 6px;
+    border-color: gray;
+    width: 400px;
+}
+#Blist li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 1em;
+  }
+.containerTable {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  .field-container .mat-form-field {
+   width: 140px;
+   margin-right: 1em;
+  }
+  
+  .field-container > * {
+    width: 100%;
+  }
+ 

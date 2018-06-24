@@ -1,0 +1,94 @@
+  
+   
+   <div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">
+<mat-grid-list cols="2" >
+    <mat-grid-tile >
+       <div class="col-xs-12 col-sm-9">
+            <h2>Aktuel luftkvalitet i Danmark</h2>
+              <div  >
+                  <p class="info">Siderne om aktuel luftkvalitet (tidligere: On-line måledata") er omlagt 9. april 2017.
+                      <strong>Brug menubjælken i toppen for at tilgå data – f.eks. Stationer og Stofefr.</strong>
+                      Via menubjælken er der adgang til data fra de seneste to uger fra en del af vores måleudstyr.</p>
+              </div>
+           <div>
+          <h3>Målinger</h3>
+          <p>Aarhus Universitet varetager nationale opgaver vedrørende luftforurening.
+                  <a href="http://dce.au.dk/">DCE - Nationalt Center for Miljø og Energi </a>ved Aarhus Universitet er indgangen til Aarhus Universitets faglige miljøer inden for natur, miljø og energi. Den rolle, som det tidligere Danmarks Miljøundersøgelser har haft, varetages nu af DCE i samarbejde med faglige institutter ved Aarhus Universitet, herunder
+                  <a href="http://envs.au.dk/">Institut for Miljøvidenskab</a>.<br/>Aarhus Universitet måler luftkvalitet på repræsentativt udvalgte steder i større byer og i landområder.
+                  
+                  Målestationerne opdeles i "typer" efter hvor de er opstillet:</p>
+                  <ul>
+                      <li> Gade - på stærkt trafikerede gader</li>
+                      <li>Bybaggrund - på tage eller i gårde i byområder</li>
+                      <li>Land - i åbne områder langt fra større forureningskilder</li>
+                  </ul>
+                  <p>Landstationerne registrerer den generelle forurening over Danmark. Den er i mange tilfælde domineret af den forurening som udsendes i områder udenfor landets grænser.<br/>
+                  
+                  På bybagrundsstationerne registreres desuden den forurening, som udsendes i byområdet. Her bidrager kilder som trafik og boligomvarmning samt eventuelle bidrag fra industrier. Resultaterne er repræsentative for forureningen i områder (fx boligkvarterer), som ikke ligger direkte op til stærkt trafikerede gader.<br/>
+                  
+                  På gadestationerne er trafikken umiddelbart forbi stationen den væsentligste kilde for stoffer som kvælstofoxider, kulmonoxid og til dels PM10 (partikler mindre end 10 µm). Gadestationerne er i alle tilfælde placeret på fortovet umiddelbart op til kørebanerne på en tæt trafikeret gade i bymidten. Resultaterne giver et indtryk af den forurening man udsættes for i "gaderum", idet der - afhængigt af de meteorologiske forhold - kan være store variationer over mindre afstande.</p>
+  
+           </div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile >
+          <iframe src="http://www2.dmu.dk/atmosphericenvironment/Prognose/Stationskort/Gmaps_stationskort.asp" width="700" height="750" title="Oversigtskort" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+        </mat-grid-tile>
+    </mat-grid-list>
+      
+              <mat-grid-list cols="2" rowHeight="100px">
+                  <mat-grid-tile></mat-grid-tile>
+                  <mat-grid-tile></mat-grid-tile>
+
+              </mat-grid-list>  
+ 
+
+
+
+<mat-grid-list cols="3"   >
+        <mat-grid-tile>
+                <mat-card class="card">
+                    <mat-card-title><h4> Research Station, Station Nord</h4></mat-card-title>
+               
+                            <mat-card-content>
+                                <p>VILLUM Research Station er en ny forskningsstation ved Station Nord i 
+                                Grønland, som indebærer en gennemgribende opgradering af de gamle forskningsfaciliteter.
+                                 Der foretages kontinuerte målinger på Villum Research Station, Station Nord. 
+                                 Data transmitteres via satellit til Aarhus Universitet i Danmark. Resultater for ozon,
+                                  kviksølv opdateres normalt hvert døgn. Alle tider angives som UTC.Målingerne i Grønland
+                                   er en del af<a href="https://www.amap.no/"> AMAP</a> (Arctic Monitoring and Assessment Program). AMAP er et internationalt 
+                                   samarbejde mellem lande med interesser i Arktis. <a href="http://villumresearchstation.dk/">Mere om Villum Research Station</a>
+                                </p>
+                            </mat-card-content>
+                    </mat-card>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+                <mat-card class="card">
+                    <mat-card-title><h4>Luftudsigten</h4>
+                        </mat-card-title>
+               
+                            <mat-card-content>
+                                <p>Aarhus Universitet beregner den forventede luftforurening i Danmark de næste tre dage (Luftudsigten).
+
+                                        For Miljøkontrollen i København laves prognoser for Københavnsområdet og særligt belastede gadestrækning. Se<a href="http://envs.au.dk/videnudveksling/luft/luftudsigten/"> HER</a>
+                                </p>
+                            </mat-card-content>
+                    </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+                <mat-card class="card">
+                    <mat-card-title><h4>Ozon i Europa </h4></mat-card-title>
+               
+                            <mat-card-content>
+                                <p>Det Europæisk Miljøagentur opdaterer hver time data for ozon fra de europæiske lande. Se disse data HER, hvor bl.a. udvikling af ozon-episoder på europæisk niveau kan følges.
+                                </p>
+                            </mat-card-content>
+                    </mat-card>
+        </mat-grid-tile>
+</mat-grid-list>
+</div>
+</div>
+
+  <router-outlet></router-outlet>

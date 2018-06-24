@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">
+        <h3> {{selectedStation?.navn}} </h3>  
+      <div class="col-lg-12 text-center">
+          <p>
+              <span class="text-info">Gasser:</span>
+              <span class="text-nowrap">NO<sub>2</sub>: Kvælstofdioxid µg/m<sup>3</sup></span>,
+              <span class="text-nowrap">NO<sub>x</sub>: Kvælstofoxider µg/m<sup>3</sup></span>,
+              <span class="text-nowrap">CO: Kulmonoxid mg/m<sup>3</sup></span>,
+              <span class="text-nowrap">O<sub>3</sub>: Ozon µg/m<sup>3</sup></span>,
+              <span class="text-nowrap">SO<sub>2</sub>: Svovldioxid µg/m<sup>3</sup></span><br />
+              <span class="text-info">Partikler:</span>         
+              <span class="text-nowrap">PM<sub>10</sub> (PM10Teom): Partikler mindre end 10 µm</span>,
+              <span class="text-nowrap">PM<sub>25</sub> (PM25Teom): Partikler mindre end 2,5 µm </span><br /><br />
+              <!-- <font size="3" color="red">Der er i øjeblikket problemer med internetforbindelsen til nogle af stationerne, og data kan mangle.</font> -->
+            </p>
+      </div>      
+  
+<div>
+
+    <div>
+         <div class="field-container">
+ 
+            <form class="form-container" [formGroup]="options" (ngSubmit)="getGraph()" >
+
+       <!--      <mat-form-field >           
+             <mat-select placeholder="Vælg et stof" [formControl]="stofid" >
+                    <mat-option *ngFor="let stof of stofs" [value]="stof.stofId">
+                      {{ stof.forkortelse }}
+                    </mat-option>
+             </mat-select>
+            </mat-form-field> 
+            <mat-form-field >
+                <input matInput [matDatepicker]="picker" placeholder="Vælg et år" [formControl]="dato">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field >           
+                    <mat-select placeholder="Vælg en frekvens" [formControl]="frekv" >
+                           <mat-option *ngFor="let frekv of frekvs" [value]="frekv.value">
+                             {{ frekv.viewValue }}
+                           </mat-option>
+                    </mat-select>            
+            </mat-form-field>-->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Hent data</button>
+            </div>
+     </form>    
+   
+         </div>
+       <div>
+        <div *ngIf="chart" [chart]="chart">
+         <div ></div>
+         </div>
+        </div>
+    </div>
+
+</div>
+        
+    

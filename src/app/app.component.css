@@ -1,0 +1,62 @@
+nav .container-fluid {
+    background-color: #002546;
+    color: #fff;
+}
+
+
+.nav-item{
+    font-size: 14px;
+    color: white;
+    font-family: AUPassataRegular;
+}
+
+#map{
+text-align: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;  
+    padding: 0;
+}
+ 
+li {
+    float: left;
+    margin: 1em;
+    margin-left: 2em;
+}
+li .dropdown-item{
+float: left;
+font-size: 10;
+margin: 0;
+padding-inline-end: 0.2em;
+
+}
+li .dropdown-header{
+    color:  #10497a;
+    font-weight: bold;
+}
+a .dropdown-toggle{
+    text-decoration: aliceblue;
+    color: white;
+}
+ a .dropdown-item{
+    float: none;
+    font-size: 10;
+    margin-block-end: -1em;
+
+    }
+
+
+
+/*
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+} */

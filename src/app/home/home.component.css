@@ -1,0 +1,15 @@
+div .jumbotron{
+    height: 10px;
+}
+p .info{
+    font-size: 7px;}
+
+mat-grid-tile {
+padding: 20%;
+}   
+.card {
+    max-width: 350px;
+    
+font-size: 12px;
+margin: 1em;
+background: rgb(241, 241, 241);  }

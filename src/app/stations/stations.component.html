@@ -1,0 +1,25 @@
+ <mat-accordion>
+  <mat-expansion-panel *ngFor="let panel of panels" [expanded]='isExpanded===panel.maalestedId' (opened)="setStep(panel.maalestedId)">
+    <mat-expansion-panel-header>
+     <a [routerLink]="['/station3', panel.maalestedId]">{{panel.navn}}</a>
+    </mat-expansion-panel-header>
+
+  <ul>
+  <li>
+      Typen: <strong>{{panel.typen}}</strong>      
+  </li>
+  <li>
+      Start dato: <strong>{{panel.startDato | date:'yyyy-MM-dd' }}</strong>       
+  </li>
+
+  <li>Måles: </li>
+  <ul class="left-ul" *ngFor="let stof of stofs">
+         <li class="left-li"><a [routerLink]="['/compound', stof.stofId]"> {{stof.forkortelse}} ,</a> </li>
+  </ul>    
+ 
+</ul>
+  
+  </mat-expansion-panel>
+
+</mat-accordion> 
+

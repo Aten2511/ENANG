@@ -1,0 +1,24 @@
+<mat-accordion clas="align">
+  <mat-expansion-panel *ngFor="let panel of panels" [expanded]='isExpanded===panel.stofId' (opened)="setStep(panel.stofId)">
+    <mat-expansion-panel-header>
+     <a [routerLink]="['/compound',panel.stofId]">{{panel.forkortelse}}</a>
+    </mat-expansion-panel-header>
+
+  <ul>
+  <li>
+    Navn :<strong>{{panel.navn}}</strong>      
+  </li>
+  <li>
+    Enhed : <strong>{{panel.enhed }}</strong>       
+  </li>
+  <li>Bliver målt i stationer: </li>
+  <ul class="left-ul" *ngFor="let station of stations">
+    <li class="left-li"><a [routerLink]="['/station3', station.maalestedId]"> {{station.navn}} </a> </li>
+  </ul>  
+ 
+</ul>
+  
+  </mat-expansion-panel>
+
+</mat-accordion> 
+
